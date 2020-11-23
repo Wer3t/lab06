@@ -1,15 +1,17 @@
-// 
+#include <iostream>
+#include <cstdlib>
 #include<stdio.h>
 
 int main()
 {
+    srand(time(0));
     #define N 3
     int mas[N][N];
     int i2,j2,sum; 
     int masr[N][N];
     for (int i=0;i<N;i++) {
     for (int j=0;j<N;j++){
-        mas[i][j] = i + j;
+        mas[i][j] = rand()%100;
         masr[i][j] = 0;
         }
   }
